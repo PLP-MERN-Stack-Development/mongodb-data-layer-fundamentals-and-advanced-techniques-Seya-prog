@@ -1,10 +1,13 @@
 // insert_books.js - Script to populate MongoDB with sample book data
 
+// Load environment variables
+require('dotenv').config();
+
 // Import MongoDB client
 const { MongoClient } = require('mongodb');
 
-// Connection URI (replace with your MongoDB connection string if using Atlas)
-const uri = 'mongodb://localhost:27017';
+// Connection URI (set MONGODB_URI for Atlas; defaults to local MongoDB)
+const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017';
 
 // Database and collection names
 const dbName = 'plp_bookstore';
