@@ -101,8 +101,17 @@ Ensure your MongoDB server is running and the connection string is correct.
 - `insert_books.js` present and runnable
 - `queries.js` present and runnable
 - `README.md` explains how to run scripts (local and Atlas)
-- Screenshot of MongoDB Compass or Atlas showing `plp_bookstore.books` with sample data
+- Screenshot of MongoDB Compass or Atlas showing `plp_bookstore.books` with sample data (save in `screenshots/` folder)
 - Commit and push all files to your GitHub Classroom repository
+
+## Taking the Screenshot
+
+1. Go to [MongoDB Atlas](https://cloud.mongodb.com/) and sign in
+2. Navigate to your cluster → **Browse Collections**
+3. Select database: `plp_bookstore` → collection: `books`
+4. Take a screenshot showing the collection with sample documents
+5. Save the screenshot as `screenshots/atlas-books-collection.png` (or similar name)
+6. Commit and push: `git add . && git commit -m "Add screenshot" && git push`
 
 ## Resources
 
